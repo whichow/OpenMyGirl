@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 222de79687f14554284eabd9a0b2afe1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: polySurface3251
+    100002: polySurface3252
+    100004: polySurface3262
+    100006: polySurface3277
+    100008: polySurface3279
+    100010: polySurface3286
+    100012: polySurface3288
+    100014: polySurface3301
+    100016: polySurface3304
+    100018: polySurface3317
+    100020: polySurface3358
+    100022: polySurface3405
+    100024: polySurface3444
+    100026: polySurface3445
+    100028: polySurface506
+    100030: polySurface507
+    100032: polySurface508
+    100034: polySurface509
+    100036: polySurface517
+    100038: //RootNode
+    400000: polySurface3251
+    400002: polySurface3252
+    400004: polySurface3262
+    400006: polySurface3277
+    400008: polySurface3279
+    400010: polySurface3286
+    400012: polySurface3288
+    400014: polySurface3301
+    400016: polySurface3304
+    400018: polySurface3317
+    400020: polySurface3358
+    400022: polySurface3405
+    400024: polySurface3444
+    400026: polySurface3445
+    400028: polySurface506
+    400030: polySurface507
+    400032: polySurface508
+    400034: polySurface509
+    400036: polySurface517
+    400038: //RootNode
+    2300000: polySurface3251
+    2300002: polySurface3252
+    2300004: polySurface3262
+    2300006: polySurface3277
+    2300008: polySurface3279
+    2300010: polySurface3286
+    2300012: polySurface3288
+    2300014: polySurface3301
+    2300016: polySurface3304
+    2300018: polySurface3317
+    2300020: polySurface3358
+    2300022: polySurface3405
+    2300024: polySurface3444
+    2300026: polySurface3445
+    2300028: polySurface506
+    2300030: polySurface507
+    2300032: polySurface508
+    2300034: polySurface509
+    2300036: polySurface517
+    3300000: polySurface3251
+    3300002: polySurface3252
+    3300004: polySurface3262
+    3300006: polySurface3277
+    3300008: polySurface3279
+    3300010: polySurface3286
+    3300012: polySurface3288
+    3300014: polySurface3301
+    3300016: polySurface3304
+    3300018: polySurface3317
+    3300020: polySurface3358
+    3300022: polySurface3405
+    3300024: polySurface3444
+    3300026: polySurface3445
+    3300028: polySurface506
+    3300030: polySurface507
+    3300032: polySurface508
+    3300034: polySurface509
+    3300036: polySurface517
+    4300000: polySurface3251
+    4300002: polySurface3252
+    4300004: polySurface3279
+    4300006: polySurface3286
+    4300008: polySurface3288
+    4300010: polySurface3301
+    4300012: polySurface3317
+    4300014: polySurface3358
+    4300016: polySurface3304
+    4300018: polySurface506
+    4300020: polySurface507
+    4300022: polySurface508
+    4300024: polySurface509
+    4300026: polySurface517
+    4300028: polySurface3262
+    4300030: polySurface3277
+    4300032: polySurface3405
+    4300034: polySurface3444
+    4300036: polySurface3445
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Asphalt_Painted_White
+    second: {fileID: 2100000, guid: a531c7e2e6ab46b49b5cc32ab5e9d135, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

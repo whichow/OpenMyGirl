@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: b3186e12e2106de42b8ebbedb4a6baf4
+timeCreated: 1474983058
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: picture001_01
+    100004: picture001_010
+    100006: picture001_011
+    100008: picture001_012
+    100010: picture001_013
+    100012: picture001_014
+    100014: picture001_015
+    100016: picture001_02
+    100018: picture001_03
+    100020: picture001_04
+    100022: picture001_05
+    100024: picture001_06
+    100026: picture001_07
+    100028: picture001_08
+    100030: picture001_09
+    100032: picture002_01
+    100034: picture002_02
+    100036: picture002_03
+    100038: picture002_04
+    100040: picture002_05
+    100042: picture002_06
+    100044: picture003_01
+    100046: picture003_02
+    100048: picture003_03
+    100050: picture003_04
+    100052: picture003_05
+    100054: picture003_06
+    100056: picture003_07
+    400000: //RootNode
+    400002: picture001_01
+    400004: picture001_010
+    400006: picture001_011
+    400008: picture001_012
+    400010: picture001_013
+    400012: picture001_014
+    400014: picture001_015
+    400016: picture001_02
+    400018: picture001_03
+    400020: picture001_04
+    400022: picture001_05
+    400024: picture001_06
+    400026: picture001_07
+    400028: picture001_08
+    400030: picture001_09
+    400032: picture002_01
+    400034: picture002_02
+    400036: picture002_03
+    400038: picture002_04
+    400040: picture002_05
+    400042: picture002_06
+    400044: picture003_01
+    400046: picture003_02
+    400048: picture003_03
+    400050: picture003_04
+    400052: picture003_05
+    400054: picture003_06
+    400056: picture003_07
+    2300000: picture001_01
+    2300002: picture001_010
+    2300004: picture001_011
+    2300006: picture001_012
+    2300008: picture001_013
+    2300010: picture001_014
+    2300012: picture001_015
+    2300014: picture001_02
+    2300016: picture001_03
+    2300018: picture001_04
+    2300020: picture001_05
+    2300022: picture001_06
+    2300024: picture001_07
+    2300026: picture001_08
+    2300028: picture001_09
+    2300030: picture002_01
+    2300032: picture002_02
+    2300034: picture002_03
+    2300036: picture002_04
+    2300038: picture002_05
+    2300040: picture002_06
+    2300042: picture003_01
+    2300044: picture003_02
+    2300046: picture003_03
+    2300048: picture003_04
+    2300050: picture003_05
+    2300052: picture003_06
+    2300054: picture003_07
+    3300000: picture001_01
+    3300002: picture001_010
+    3300004: picture001_011
+    3300006: picture001_012
+    3300008: picture001_013
+    3300010: picture001_014
+    3300012: picture001_015
+    3300014: picture001_02
+    3300016: picture001_03
+    3300018: picture001_04
+    3300020: picture001_05
+    3300022: picture001_06
+    3300024: picture001_07
+    3300026: picture001_08
+    3300028: picture001_09
+    3300030: picture002_01
+    3300032: picture002_02
+    3300034: picture002_03
+    3300036: picture002_04
+    3300038: picture002_05
+    3300040: picture002_06
+    3300042: picture003_01
+    3300044: picture003_02
+    3300046: picture003_03
+    3300048: picture003_04
+    3300050: picture003_05
+    3300052: picture003_06
+    3300054: picture003_07
+    4300000: picture001_01
+    4300002: picture001_02
+    4300004: picture001_03
+    4300006: picture001_04
+    4300008: picture001_05
+    4300010: picture001_06
+    4300012: picture001_07
+    4300014: picture001_08
+    4300016: picture001_09
+    4300018: picture001_010
+    4300020: picture001_011
+    4300022: picture001_012
+    4300024: picture001_013
+    4300026: picture001_014
+    4300028: picture001_015
+    4300030: picture002_01
+    4300032: picture002_02
+    4300034: picture002_03
+    4300036: picture002_04
+    4300038: picture002_05
+    4300040: picture002_06
+    4300042: picture003_01
+    4300044: picture003_02
+    4300046: picture003_03
+    4300048: picture003_04
+    4300050: picture003_05
+    4300052: picture003_06
+    4300054: picture003_07
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

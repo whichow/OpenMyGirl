@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: uSkyboxPro
+  m_Shader: {fileID: 4800000, guid: 516fcc53ef335864fb0e34ae3de1b01c, type: 3}
+  m_ShaderKeywords: USKY_ENABLE_OCEAN
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_CustomRenderQueue: 1000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Inscatter:
+        m_Texture: {fileID: 8400000, guid: 8b36455170686440e83251867b37680e, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MoonSampler:
+        m_Texture: {fileID: 2800000, guid: 46a7e5544b82b44dc883abb80119b3dc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OuterSpaceCube:
+        m_Texture: {fileID: 8900000, guid: 5e6afd10529e04353b746c3dacac549a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Transmittance:
+        m_Texture: {fileID: 8400000, guid: 4138ab9915c5441c09531c811e15b9de, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - u_Inscatter:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - u_MoonSampler:
+        m_Texture: {fileID: 2800000, guid: 46a7e5544b82b44dc883abb80119b3dc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - u_OuterSpaceCube:
+        m_Texture: {fileID: 8900000, guid: 90caedd366c2e4772a22509b73cfd4c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - u_Transmittance:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - RES_R: 2
+    - SUN_INTENSITY: 100
+    - _AltitudeScale: 50
+    - _GroundOffset: 0
+    - _temp: 0
+    - _turbidity: 1
+    - _uSkySkyboxOcean: 1
+    - _uSkySunDisk: 1
+    - mieG: 0.76
+    - u_RES_R: 2
+    m_Colors:
+    - NightSkyZenithColShift: {r: 4, g: 0, b: 0, a: 0}
+    - SUN_DIR: {r: 0.00000031848256, g: 0.21132478, b: 0.97741604, a: 0}

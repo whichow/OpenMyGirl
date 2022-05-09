@@ -1,0 +1,79 @@
+
+Here is the steps to set up the uSkyPro Atmospheric Scattering:
+
+Apply all the requires components to your scene:
+
+SKYBOX (Basic setup):
+====================================
+1) Apply the "uSkyPro" prefab in your scene. 
+(FOLDER: uSky/uSkyPro Beta/Prefabs/uSkyPro)
+
+2) If your scene already has a the directional light called "Directional Light". 
+uSkyPro should apply an "uSkySun" script automatically for you. 
+
+Other wise you may need to apply that "uSkySun" script to directional light manually. 
+(MENU: Component/uSkyPro/uSky Sun)
+
+* Keep it mind that most of the uSky components required the "uSkySun" component in your directional light.
+  This able to tell which game object is a Sun Light to all uSky components.
+
+
+REFLECTION PROBE SETUP
+====================================
+1) Create a Reflection Probe in your scene. Place it where you want it to get the reflection from.
+
+2) Apply the "uSky ReflectionProbe Updater" to this reflection probe game object.
+(MENU: Component/uSkyPro/uSky Reflection Probe Updater)
+
+3) Set the ReflectionProbe overage size: 
+   Runtime Setting/Size value that will over your scene.
+
+4) Select proper "Culling Mask" in the Cubemap Capture Setting. 
+	If you only need to reflect the skybox and sky clouds, set up as following:
+	- Go to Edit Layer. Pick a layer number and name it as "SkyClouds".
+	- Assign the uSkyClouds2D "Clouds layer" to that layer number.
+	- Set the Cubemap Capture Setting in ReflectionProbe : 
+	"Clear Flag" to Skybox, enable "Culling Mask" to the SkyClouds layer only. 
+
+
+
+ATMOSPHERIC SCATTERING (ImageEffects):
+======================================
+3) Apply the "uSky Atmospheric Scattering" script to uSkyPro. 
+(MENU: Component/uSkyPro/uSky Atmospheric Scattering)
+
+4) "uSky Atmospheric Camera" script to your main camera.
+(MENU: Component/uSkyPro/uSky Atmospheric Camera)
+
+5) Enable "HDR" toggle in main camera for better rendering result.
+  (Make sure Disable the "Anti-Aliasing" in QualitySettings for HDR rendering)
+
+
+
+
+PROJECT SETTINGS:
+=======================================
+- Disable the "Anti-Aliasing" in QualitySettings
+(If the main camera rendering path uses Forward mode with "Anti-Aliasing" was enabled that screen
+ will render some unwanted artifacts edge)
+
+OPTIONAL :
+- Use "Linear" Color Space in "Player" Settings for better PBS ligthing.
+
+
+That it is !
+Enjoy the uSkyPro!
+
+
+
+OTHERS & TIPS
+=======================================
+All The uSky components comes with "ToolTip" help messages, just move your cursor to any parameter name to trigger it.
+
+You can create your own CLouds 2D texture via third party application, such as TerraGen, Vue, or even edit from Photo image etc.
+Here is a YouTube video tutorial to demonstrate how to make a custom 2D cloud in TerraGen. Video maded by uSky user jbakirli. Thanks.
+https://www.youtube.com/watch?v=TIgQ5baInBE
+
+
+
+

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 1d8d4a7bc5a3047c687132cc6eea14b6
+timeCreated: 1475664948
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - Clouds2DMaterial: {fileID: 2100000, guid: c2233b708d83a471d9df6b67560ab801, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

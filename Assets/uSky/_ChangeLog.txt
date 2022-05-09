@@ -1,0 +1,274 @@
+uSky 1.5 Change Log
+=======================
+Known Issue:
+LightShaft is still broken in Single Pass VR.
+
+- Fixed the Shader error for unity version 5.6.0 or newer
+- Now Atmospheric Scattering supports Single Pass VR.
+- Added 1024 Resolution MilkyWay Cubemap.
+
+
+uSky 1.4.2 Change Log
+=======================
+
+- Fixed the light direction of clouds 2D shader after it has been rotated via shader anitmation.
+
+- Fixed the Commandbuffer that not being clearup if disable the scattering script.
+
+
+
+uSky 1.4.1 Change Log
+=======================
+
+- Fixed the scattering of clouds 2D shader was not in proper direction after the clouds have been rotated via shader anitmation.
+
+- Re-organized the atmospheric scattering demo scene GUI.
+
+- Other small bugs fixed.
+
+
+
+uSky 1.4.0 Change Log
+=======================
+*****************************************************************************************************************************************
+- NOTE: The uSky 1.X will not be included in the package anymore. It have not been updated since v1.1.9. and stopped further development.
+  Provided the download link in case you needed this backup.
+  https://dl.dropboxusercontent.com/u/59109416/uSky/uSky1X_v119.unitypackage
+*****************************************************************************************************************************************
+
+  REQUIREMENT: UNITY EDITOR VERSION 5.3.6 OR NEWER
+------------------------------------------------------
+
+- Added "uSky LightShafts" component. It is a standalone image effect that apply to camera. This is fairly light weight and mobile friendly.
+  This new LightShafts that you can find in Component/uSkyPro menu as usual.
+
+  * This LightShafts comes with new type of screen space based radial occlusion. User can choose between the world space based "Scatter Occlusion" ("Black Smith" version) 
+  or this new built-in light shafts radial occlusion. 
+
+  * Radial occlusion will be available only using LightShafts effect and will affect on sky (skybox) as well. 
+
+  * Note that the radial occlusion does Not required realtime light shadow (or shadow cascades and shadow distance) to work.
+
+  Modified currently "uSkyPro Atmospheric Scattering" demo scene that added LightShaft, and now disabled the Scatter Occlusion by default.
+
+
+- Added the option for high quality sun disk rendering in mobile skybox shader (Same as uSkyPro sun disk).
+  Default enabled "#define USKY_SUNDISK_HQ" macro in "uSkyboxPro Mobile SM2" shader file. 
+  It can switch back to cheaper sun version by commenting out this macro.
+
+- Fixed all shaders with compatible issue for Unity 5.5 beta with new inverted Z-buffer graphics api.
+
+- Fixed the Clouds 2D direct light shading gets darken when the sun light is dimmer then the ambient light.
+
+- Removed material title bar display in the uSkyClouds2D component, which looks more simplified in inspector.
+
+- Disabled the Realtime Reflection Probe update for any uSkyPro Clouds 2D parameters changed in Play or Runtime mode. 
+  It costs too much cpu overhead to detect the clouds material parameters changed in runtime, thus now it will only reatime update in Editor mode.
+  The Reflection Probe will still update as expected when start up in runtime and time cycle has been changed.
+
+- Improved supports for Single-Pass stereo rendering in unity editor 5.4 and newer. (Looking for more user report on that)  
+
+- Improved uSky Timeline window that will not close when editor enter/exit the play mode or editor is compiling script.
+
+- Improved "uSkyFogGradient" and "uSkyReflectionProbeUpdater" that now they will always update when sun or moon light direction has changed, 
+  even uSkyPro component did not apply to the scene.
+
+- Re-adjust the uSkyPro skybox sun size, it is now slightly bigger by default and it matches the size of the unity procedural skybox size.
+ 
+- Other small bugs fixed.
+
+
+
+uSky 1.3.0 Change Log
+=======================
+- Adapted uSky 1.X clouds to uSkyPro. This component called "uSkyClouds2D" and "uSkyPro Clouds 2D" material,
+  also included the "uSkyPro Clouds 2D Plane" material for the 2D plane clouds.
+  
+	Change Note:
+  * Now it uses only single "Red" channel of the clouds texture. The preivous 1.X clouds texture should able to work directly in this material.
+    (Recommended increase the horizion transparent in the texture to get better horizion blending.)
+  
+  * Added the "Ambient Source" parameter for the clouds ambient that can be used from Sky or Equator color.
+
+  * Added scatter term in the clouds rendering and added new "Scatter Multiplier" parameter to overide the brightness.
+    Improved shading of the clouds luminance nearby the sun and moon.
+  
+  * Now the direct lighting of night clouds shaded slightly brighter from moon light that give better volume shading result at night time.
+    Also the ambient brightness of night clouds is based on the moon light intensity, ambient gradient, night zenith color and Outer Space Intensity.
+  
+  * Renamed "Sun Color multiplier" to "Light Color multiplier", corrected term of the direct lighing on clouds that included both sun and moon. 
+  
+  * Renamed "Opacity mask" parameter to "Clouds Density" and improved masking the moon and stars at night time.
+  
+  * Reflection Probe will automatically update If clouds material settings have changed.
+  	(It will not update if the RotateSpeed parameter change.)
+  
+  * The uSkyClouds2D requires the uSkyLighting component to work properly.
+  
+  * Note: This uSkyClouds2D will have slightly rendering result then original uSky 1.X. 
+  	That due to different pre-set ambient gradient color in uSkyLighting component, it can be manual re-adjust.
+  
+  
+- Added the uSkyClouds2D component in "uSkyPro Prefab" and "Basic Scene" Demo by default. 
+
+- Added an Timeline window that always floating in front of the main editor window. 
+  It is useful for time cycle lighting testing, and no need to select the uSkyPro gameobject.
+  Usage: go to menu: Window/uSky Timeline window
+
+- Modified the "MouseDragTimelineController" component that it will Not force to switch "Default" type in uSkyTimeline anymore.
+
+
+
+
+uSky 1.2.1 Change Log
+=======================
+
+- Fixed reflection Probe renders black sky issue with uSkyPro Skybox on DX11.
+
+- Fixed new "Disable Sun Disk" function that stars and space will appear on the bottom of the sky.
+
+- Improved uSkyPro Skybox that has small artifact on sky zenith when used "Disable skybox ocean" toggle.
+
+
+
+uSky 1.2.0 Change Log
+=======================
+
+uSkyPro:
+
+- Now uSkyPro supports WebGL(HTML5) build. 
+  Note:
+  * This will work only in Unity editor 5.3.x or newer version, thus it is not supported in version 5.2.x. WebGL (Preview) build.
+
+  * Currently support forward path only for atmospheric scattering to prevent the clipped specular with the material.
+  	That due to no camera HDR support in WebGL, it breaks the uSkyPro intermal tonemapping of the scene.
+  	(Looking work arround solution with it.)
+
+  * At this moment Unity still does not fully support realtime Reflection Probe on WebGL platform.
+	So you may experience some rendering error of reflection cubemap.
+
+  * Currently occlusion may not work well that due to the limitation of the realtime shadow support on WebGL platform.
+  	Recommended it should be disabled on WebGL build for now.
+  
+  * "uSkyBoxPro mobile" material will work as well with faster rendering performance.
+  
+- Fixed uSkyPro that has some compatible issue with PlayStation 4 build.
+
+- Occulsion: Fixed occlusion bug that missing in nagative Z axis.
+
+- Occulsion: Fixed some compatible issue of "AtmosphericScattering_Occlusion" shader with new Unity 5.4 shader API.
+  (Removed "#pragma multi_compile SHADOWS_NATIVE" code.)
+  
+- Occulsion: Now no matter MSAA (Anti-Aliasing) was enabled or disabled, the occulsion will always render with correct uv coordinate on Window based platform.
+  (Occulsion pass will not flipped upside down anymore)
+  
+- Occulsion: Added the "Occlusion Debug" toggle to drawn the occulsion pass only on screen.
+
+- Fixed atmospheric scattering artifact issue (Greenish on bottom) when sun is closed to horizon. 
+
+- Fixed the uSkyPro has been multiply the exposure value twice in all the shaders. 
+  If your exposure parameter is not 1 (default value), than sky brightness may have slightly different. You may need to re-adjust it.
+
+- Fixed some swizzeling issue that between high and medium precision variables in the mobile skybox shader. So it is more optimized now.
+
+- Improved: Now Sun Disk has better rendering quality and added "Disable Sun Disk" toggle in uSkyPro setting.
+
+- Improved: The Reflection Probe will automatically update if any precompute parameters of uSkyPro that has changed.
+
+- Improved: The uSkyPro mobile material will render with better balance for sky brightness and reduced some darker area on the zenith of sky.
+ 			If applied uSkyPro mobile material, uSkyPro will automatically set "Inscatter Altitude Sample" to X1, which it required.
+
+- Renamed "Runtime Time Slicing" of "RunTime Refresh Mode" in uSkyReflectionProbeUpdater script.
+
+- Modified the execution order for initialization of the Starfield, now the code execution has moved to Awake() function instead of Enable().
+  (It may fix some performance issue that reported by uSky user.)
+
+
+
+
+uSky 1.1.9f3 Change Log
+=======================
+- Added uSkyPro Mobile Material (SM 2.0), this shader is roughly 4 times faster the original shader.
+Usage: Apply the "uSkyboxPro Mobile SM2" Material to "Skybox Material" field in uSkyPro.
+
+// LIMITATION OF MOBILE SHADER:
+//
+// Supports only Altitude Sample X1 
+// No calculation of camera position 
+// No Altitude Scale
+// Always at ground/sea level camera view from the sky
+// Always disabled skybox ocean effect
+// No earth shadow
+// No Moon Corona
+//
+// Ported Unity Photographic tonemapping formula for skybox :
+// - Sky color is more saturated then original color
+// - Slightly darker on Zenith (top of the sky)
+
+- Fixed the uSkyPro script error when apply to a new game object.
+
+- Renamed "Play Cycle" settings to "Day Night Cycle".
+
+- Renamed " uSkyAtmosphericDeferred" script to " uSkyAtmosphericCamera".
+
+
+
+HotFix (v1.1.9f2):
+==================
+Fixed when the scene applied with uSkyPro prefab, uSkyboxPro material is completely back and Undo is broken with uSkyPro.
+
+
+
+uSkyPro Beta 2 :
+=======================
+
+- Added new user-interface with foldable group settings. 
+  (New Interface is based on Unity "Cinematic Image Effects" PropertyDrawer script)
+
+- Added new script "uSkyTimeline" which combined the final "Timeline" control with "Play Cycle" in a single component.
+  Renamed the "North Pole Offset" parameter to "Sun Equator Offset". 
+  Now it allows user to change the Timeline even when time cycle is playing at runtime.
+
+- Rewritten the internal logic of the uSkyPro and more polished version. Now it is using unity event which acting like a states machine.
+  This new logic is fairly fast, responsive, more stable and running lower update behaviour on cpu.
+
+- Now most of the uSky components allow to work independently by it-self. User can decide which component to add or remove with GameObject.
+  Ideally this will be easier to intergrade uSkyPro with other third-party or custom weather asset.
+  For instance, user can add just only "uSkyTimeline" component to a GameObject and with "uSkySun" component in Directional light,
+  it will work as the time cycle and sun controller.
+  For more different components usage or combination that please check out the example scenes in new "Alternative Component Setup Demo" folder.
+
+- Added a new and improved version of "uSkyReflectionProbeUpdater" script for Reflection Probe update control .
+  This new script does not require to enable "Auto" toggle (in Lighting Window) anymore for Reflection Probe sequence update in both editor and runtime.
+
+- Added a new "uSkyFogGradient" script for unity built-in fog in Lighting window. It supports on Forward path only.
+  (It provides the same functionality as "uFogGradient" script in previous uSky 1.x.)
+
+- Fixed the atmospheric occlusion with "out of the shadow range" issue with better solution. (Previous was using the Shadow Distance Scale solution).
+  Now the atmospheric occlusion effect will fade out nicely when camera is out side the realtime shadow distance range.
+  Also cleared occlusion shader compiler warning on d3d11.
+
+- Changed and simplified "uSky Atmospheric Scattering" script:
+  Removed "Horizion Fixup" parameter. Now hard coded "#define HORIZON_FIX" in the "Atmosphere.cginc" file which default is "ON".
+  Removed "Shadow Distance" parameter and "Use Shadow Distance Scale" toggle. Both of them are not needed anymore.
+  User can apply also an optional "ShadowDistanceHelper" script for alternative shadow distance control.
+
+- Reduced some shader Keywords.
+  Now uSkyPro Beta uses arround 5 keywords and they share some Keywords with uSky 1.x to keep the lower usage in total keywords if user installed both version in the project.
+  So total for both version of uSky use arround 7 keywords now.
+  Note: The total keywords amount may change in future version.
+
+- Changed the sun spot rendering in uSkyboxPro shader, the sun brightness will always higher than 1 which independent by HDR Mode setting.
+  It should get better result for bloom image effect.
+
+- Fixed and cleared the "uSkySun" and "uSkyMoon" editor warning when built the project.
+
+- Added "[ImageEffectAllowedInSceneView]" attribute in Atmospheric Scattering Image Effects which introduced in Unity 5.4 (Beta 5). 
+  This will copy the Image effect from the main camera onto the Scene View camera that allows to view the Image Effects directly inside editor Scene View window.
+
+- Re-organized the uSkyPro menu and easily to find all the uSkyPro components now.
+
+- Improved over all performance compares with previous beta version.
+
+
+***  New clouds system for uSkyPro is still working in progress. Please be patient for future update :)

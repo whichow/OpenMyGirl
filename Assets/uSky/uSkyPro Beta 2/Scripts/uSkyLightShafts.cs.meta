@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dc2765d14e5234b0482340af15df463b
+timeCreated: 1478732747
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - m_LightShaftsComposite: {fileID: 4800000, guid: c1dce5048bb124d4a955a13337bc0521,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
