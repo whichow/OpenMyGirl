@@ -43,8 +43,8 @@ namespace usky
 			if ( Input.touchCount == 1 )  
 			{	
 				// Assume using landscape orientation on build
-				altitude = Input.GetTouch(0).deltaPosition.y * Time.smoothDeltaTime * Speed * 0.25f;
-				azimuth = Input.GetTouch(0).deltaPosition.x * Time.smoothDeltaTime * Speed * 2f;
+				altitude = Input.GetTouch(0).deltaPosition.y * Time.smoothDeltaTime * MoveSpeed * 0.25f;
+				azimuth = Input.GetTouch(0).deltaPosition.x * Time.smoothDeltaTime * MoveSpeed * 2f;
 
 				UpdateTimelineAndSunDirection (azimuth, altitude);
 			}
